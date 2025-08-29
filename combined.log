@@ -1,0 +1,26 @@
+{"level":"info","message":"Database connection established","timestamp":"2025-08-26T02:22:07.433Z"}
+{"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-26T02:22:07.462Z"}
+{"level":"info","message":"Database connection established","timestamp":"2025-08-26T02:28:41.925Z"}
+{"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-26T02:28:41.952Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-26T02:28:46.012Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-26T02:28:46.034Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-26T02:38:07.135Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-26T02:38:07.184Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-26T02:38:12.454Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-26T02:38:12.458Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-26T03:09:17.019Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-26T03:09:17.028Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-26T03:20:31.590Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-26T03:21:48.955Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-26T03:21:49.297Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-26T04:16:21.625Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-26T04:24:51.671Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-26T04:24:51.676Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-29T08:16:48.570Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-29T08:16:48.575Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-29T08:23:17.286Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-29T08:35:13.086Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-29T08:35:13.091Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-29T08:35:48.224Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection validated successfully","timestamp":"2025-08-29T08:35:48.230Z"}
+{"db":{"database":"user_service_db","host":"localhost","port":5432,"user":"postgres"},"level":"info","message":"Database connection established","timestamp":"2025-08-29T09:54:23.766Z"}
