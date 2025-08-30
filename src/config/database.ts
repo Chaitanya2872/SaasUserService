@@ -4,16 +4,24 @@ import { logger } from '../utils/logger';
 
 dotenv.config();
 
-const dbConfig = {
-  host: process.env.DB_HOST || 'localhost',
-  port: Number(process.env.DB_PORT) || 5432,
-  user: process.env.DB_USER || 'postgres',
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME || 'user_service_db',
-  max: 20,
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000,
-};
+const dbConfig = process.env.DATABASE_URL
+  ? {
+      connectionString: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: false }, // Required by Render
+      max: 20,
+      idleTimeoutMillis: 30000,
+      connectionTimeoutMillis: 2000,
+    }
+  : {
+      host: process.env.DB_HOST || 'localhost',
+      port: Number(process.env.DB_PORT) || 5432,
+      user: process.env.DB_USER || 'postgres',
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME || 'user_service_db',
+      max: 20,
+      idleTimeoutMillis: 30000,
+      connectionTimeoutMillis: 2000,
+    };
 
 const pool = new Pool(dbConfig);
 
@@ -21,10 +29,10 @@ const pool = new Pool(dbConfig);
 pool.on('connect', () => {
   logger.info('Database connection established', {
     db: {
-      host: dbConfig.host,
-      port: dbConfig.port,
-      database: dbConfig.database,
-      user: dbConfig.user,
+      host: (dbConfig as any).host || 'via connection string',
+      port: (dbConfig as any).port || 'default',
+      database: (dbConfig as any).database || 'from connection string',
+      user: (dbConfig as any).user || 'from connection string',
     },
   });
 });
@@ -39,14 +47,7 @@ const validateConnection = async () => {
   try {
     const client = await pool.connect();
     client.release();
-    logger.info('Database connection validated successfully', {
-      db: {
-        host: dbConfig.host,
-        port: dbConfig.port,
-        database: dbConfig.database,
-        user: dbConfig.user,
-      },
-    });
+    logger.info('Database connection validated successfully');
   } catch (err) {
     logger.error('Error connecting to the database:', err);
     throw err;
